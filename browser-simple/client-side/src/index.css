@@ -1,0 +1,95 @@
+/*
+
+  Don't mind me I'm just a CSS styles file to make the page 
+                    look a bit better.
+
+                    *****************
+               ******               ******
+           ****                           ****
+        ****                                 ***
+      ***                                       ***
+     **           ***               ***           **
+   **           *******           *******          ***
+  **            *******           *******            **
+ **             *******           *******             **
+ **               ***               ***               **
+**                                                     **
+**       *                                     *       **
+**      **                                     **      **
+ **   ****                                     ****   **
+ **      **                                   **      **
+  **       ***                             ***       **
+   ***       ****                       ****       ***
+     **         ******             ******         **
+      ***            ***************            ***
+        ****                                 ****
+           ****                           ****
+               ******               ******
+                    *****************
+
+*/
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light;
+  color: #000000;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  padding: 0 16px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 100vh;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  font-family: monospace;
+  width: 530px;
+  max-width: 100%;
+}
+
+textarea {
+  resize: none;
+  width: 500px;
+  height: 300px;
+  padding: 8px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  max-width: 100%;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 99px;
+  background-color: #007bff;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  max-width: 100%;
+}
+
+button[disabled] {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
