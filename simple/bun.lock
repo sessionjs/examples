@@ -5,8 +5,8 @@
     "": {
       "name": "simple-session-echo-bot",
       "dependencies": {
-        "@session.js/client": "^0.0.36",
-        "@session.js/keypair": "^1.0.2",
+        "@session.js/client": "^0.0.54",
+        "@session.js/keypair": "^1.0.3",
         "@session.js/mnemonic": "^1.0.4",
       },
       "devDependencies": {
@@ -18,6 +18,10 @@
     },
   },
   "packages": {
+    "@noble/curves": ["@noble/curves@1.9.7", "", { "dependencies": { "@noble/hashes": "1.8.0" } }, "sha512-gbKGcRUYIjA3/zCCNaWDciTMFI0dCkvou3TL8Zmy5Nc7sJ47a0jtOeZoTaMxkuqRo9cRhjOdZJXegxYE5FN/xw=="],
+
+    "@noble/hashes": ["@noble/hashes@1.8.0", "", {}, "sha512-jCs9ldd7NwzpgXDIf6P3+NrHh9/sD6CQdxHyjQI+h/6rDNo88ypBxxz45UDuZHz9r3tNz7N/VInSVoVdtXEI4A=="],
+
     "@protobufjs/aspromise": ["@protobufjs/aspromise@1.1.2", "", {}, "sha512-j+gKExEuLmKwvz3OgROXtrJ2UG2x8Ch2YZUxahh+s1F2HZ+wAceUNLkvy6zKCPVRkU++ZWQrdxsUeQXmcg4uoQ=="],
 
     "@protobufjs/base64": ["@protobufjs/base64@1.1.2", "", {}, "sha512-AZkcAA5vnN/v4PDqKyMR5lx7hZttPDgClv83E//FMNhR2TMcLUhfRUBHCmSl0oi9zMgDDqRUJkSxO3wm85+XLg=="],
@@ -38,19 +42,19 @@
 
     "@protobufjs/utf8": ["@protobufjs/utf8@1.1.0", "", {}, "sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw=="],
 
-    "@session.js/bun-network": ["@session.js/bun-network@1.0.5", "", { "dependencies": { "@session.js/errors": "^1.0.10", "@session.js/types": "^1.0.8", "lodash": "^4.17.21" }, "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-zSN1hVP4g6VxH2112JxfdEUVdnTV0G38xE2lHRRwmQRpKoPohqkYbz0iloZf78bHJWtr5W0ERZeUt+Rrv+sPyw=="],
+    "@session.js/bun-network": ["@session.js/bun-network@1.0.12", "", { "dependencies": { "@session.js/errors": "^1.0.10", "@session.js/types": "^1.0.11", "lodash": "^4.17.21" }, "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-/aBqn9alhP2Im1EmWec0aMOd5IIsmTQwLQyGz1TVNUMKse6AWRhi7XuO7RfkKu5UisgGFVXUe8EPP495O75jtg=="],
 
-    "@session.js/client": ["@session.js/client@0.0.36", "", { "dependencies": { "@session.js/bun-network": "^1.0.5", "@session.js/consts": "^1.0.3", "@session.js/errors": "^1.0.10", "@session.js/keypair": "^1.0.2", "@session.js/mnemonic": "^1.0.4", "@session.js/types": "^1.0.9", "bytebuffer": "^5.0.1", "libsodium-wrappers-sumo": "^0.7.13", "lodash": "^4.17.21", "p-retry": "^6.2.0", "protobufjs": "^7.3.0", "uuid": "^9.0.1", "zod": "^3.23.8" }, "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-9FCFotYbXQQRJTu05cwqxRRNpnc/ZJrgP3FuI6SIapS3ZRFAA6CtcmqKidpbfmpSk7UMoZ9lj2Ok1Lbq5q0OTQ=="],
+    "@session.js/client": ["@session.js/client@0.0.54", "", { "dependencies": { "@session.js/bun-network": "^1.0.10", "@session.js/consts": "^1.0.3", "@session.js/errors": "^1.0.10", "@session.js/keypair": "^1.0.2", "@session.js/mnemonic": "^1.0.4", "@session.js/types": "^1.0.11", "bytebuffer": "^5.0.1", "curve25519-js": "^0.0.4", "libsodium-wrappers-sumo": "^0.7.13", "lodash": "^4.17.21", "p-retry": "^6.2.0", "protobufjs": "^7.3.0", "uuid": "^9.0.1", "zod": "^3.23.8" }, "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-Jpz2JlockMKhHKNowtxS/8RLc8FE9kDz8mKiHLnyj23ZVlcefPfcm6AXSzClUTHgyQY/D8QIZak0RULbyrQuNQ=="],
 
     "@session.js/consts": ["@session.js/consts@1.0.3", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-/HHFvJu6vjeIDq59jRkq+P+9C5ipO1RdeE8esPz+ILLTHFHjyvDk1breivb5OqWYCqZ78UTHk0ZubpZ7mYKvjw=="],
 
     "@session.js/errors": ["@session.js/errors@1.0.10", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-HjgWPg0ih8PaeJCtgt4sfl+WyS4iykgIfRzR+bfTiyDpIFwt05gMdCdb755XZXc6xjhKoR2cqpJJFnhZ3FFddw=="],
 
-    "@session.js/keypair": ["@session.js/keypair@1.0.2", "", { "dependencies": { "libsodium-wrappers-sumo": "^0.7.13" }, "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-Yzty8lVsaoBQDGfekAx53uCs2GSin1ii+Tjam8yhqXfZs7c0it6uvx6z6YrORUJQ/PuYM3ustyecgfNdJ6wjNQ=="],
+    "@session.js/keypair": ["@session.js/keypair@1.0.3", "", { "dependencies": { "@noble/curves": "^1.9.2" }, "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-4b0XjsPkAO5Pks2rEMKgMAqJx0l3xOdTGFEqyyLYNxG6vx86V/Lt/nUsyEByYC13j6UPf0tIGJ02qCPeFxKo5A=="],
 
     "@session.js/mnemonic": ["@session.js/mnemonic@1.0.4", "", { "dependencies": { "@session.js/errors": "^1.0.9" }, "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-ms6jNp1c4G8KkV/n/wBnPkEijkjjWOLDiLf7cDjhYMinVsL3i7lJ7YfZGS/b71HzIkWEBAlcDACrveD89GYe8A=="],
 
-    "@session.js/types": ["@session.js/types@1.0.9", "", { "dependencies": { "lodash": "^4.17.21", "protobufjs": "^7.3.2" }, "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-dg08V54JMkj7bgZaSS9wX6wSWgNUbHdvUFeoClwZWutb4blvg3QubS0I8/5DFr6IXEuZJ3LsUa7b6BS5eXYZzA=="],
+    "@session.js/types": ["@session.js/types@1.0.11", "", { "dependencies": { "lodash": "^4.17.21", "protobufjs": "^7.3.2" }, "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-5EYZiMaJCZxpmbatWNtHaffSqvAayW6vV3GQmvhEnhJP7BpZ8Ju4/syrzQfpi/haKtIasr+tkWTutX+yUeqJcg=="],
 
     "@types/bun": ["@types/bun@1.1.6", "", { "dependencies": { "bun-types": "1.1.17" } }, "sha512-uJgKjTdX0GkWEHZzQzFsJkWp5+43ZS7HC8sZPFnOwnSo1AsNl2q9o2bFeS23disNDqbggEgyFkKCHl/w8iZsMA=="],
 
@@ -63,6 +67,8 @@
     "bun-types": ["bun-types@1.1.17", "", { "dependencies": { "@types/node": "~20.12.8", "@types/ws": "~8.5.10" } }, "sha512-Z4+OplcSd/YZq7ZsrfD00DKJeCwuNY96a1IDJyR73+cTBaFIS7SC6LhpY/W3AMEXO9iYq5NJ58WAwnwL1p5vKg=="],
 
     "bytebuffer": ["bytebuffer@5.0.1", "", { "dependencies": { "long": "~3" } }, "sha512-IuzSdmADppkZ6DlpycMkm8l9zeEq16fWtLvunEwFiYciR/BHo4E8/xs5piFquG+Za8OWmMqHF8zuRviz2LHvRQ=="],
+
+    "curve25519-js": ["curve25519-js@0.0.4", "", {}, "sha512-axn2UMEnkhyDUPWOwVKBMVIzSQy2ejH2xRGy1wq81dqRwApXfIzfbE3hIX0ZRFBIihf/KDqK158DLwESu4AK1w=="],
 
     "is-network-error": ["is-network-error@1.1.0", "", {}, "sha512-tUdRRAnhT+OtCZR/LxZelH/C7QtjtFrTu5tXCA8pl55eTUElUHT+GPYV8MBMBvea/j+NxQqVt3LbWMRir7Gx9g=="],
 
@@ -87,6 +93,8 @@
     "uuid": ["uuid@9.0.1", "", { "bin": { "uuid": "dist/bin/uuid" } }, "sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA=="],
 
     "zod": ["zod@3.23.8", "", {}, "sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g=="],
+
+    "@session.js/client/@session.js/keypair": ["@session.js/keypair@1.0.2", "", { "dependencies": { "libsodium-wrappers-sumo": "^0.7.13" }, "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-Yzty8lVsaoBQDGfekAx53uCs2GSin1ii+Tjam8yhqXfZs7c0it6uvx6z6YrORUJQ/PuYM3ustyecgfNdJ6wjNQ=="],
 
     "protobufjs/long": ["long@5.2.3", "", {}, "sha512-lcHwpNoggQTObv5apGNCTdJrO69eHOZMi4BNC+rTLER8iHAqGrUVeLh/irVIM7zTw2bOXA8T6uNPeujwOLg/2Q=="],
   }

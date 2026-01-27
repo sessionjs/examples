@@ -12,8 +12,8 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "@session.js/client": "^0.0.36",
-    "@session.js/keypair": "^1.0.2",
+    "@session.js/client": "^0.0.54",
+    "@session.js/keypair": "^1.0.3",
     "@session.js/mnemonic": "^1.0.4"
   }
 }
