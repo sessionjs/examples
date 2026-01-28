@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@session.js/bun-network-remote": "^1.0.9",
-    "@session.js/client": "0.0.54",
+    "@session.js/client": "^0.0.57",
     "@session.js/keypair": "^1.0.8",
     "@session.js/mnemonic": "^1.0.6",
     "react": "^18.3.1",
