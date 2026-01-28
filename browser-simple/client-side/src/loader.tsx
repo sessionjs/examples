@@ -1,8 +1,7 @@
 import React, { Suspense } from 'react'
 
-// Session.js/client loads libsodium under the hood and a lot of other things
-// so it's recommended to always await for `ready` promise before even importing 
-// anything from @session.js scope
+// Session.js/client loads bun-network under the hood and a lot of other things
+// so it's recommended to always await for `ready` promise before calling methods
 
 // That's why we implement React's native way of awaiting for things to be loaded
 // Until the promise is resolved, the component will be in suspended state, thanks to React.lazy

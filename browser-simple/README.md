@@ -2,7 +2,7 @@
 
 This example demonstrates how to use @session.js/client in web and @session.js/bun-network-remote to connect to Session network.
 
-If you're not JavaScript developer looking for the way to use @session.js and instead looking for full-featured Session messenger web client, go to [Session Web](https://github.com/VityaSchel/session-web) client by hloth.dev.
+If you're not JavaScript developer looking for the way to use @session.js and instead looking for full-featured Session messenger web client, go to [Session Web](https://git.hloth.dev/hloth/session-web) client by hloth.dev.
 
 This repository is for Session clients developers, not Session users.
 

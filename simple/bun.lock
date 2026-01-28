@@ -6,8 +6,8 @@
       "name": "simple-session-echo-bot",
       "dependencies": {
         "@session.js/client": "^0.0.54",
-        "@session.js/keypair": "^1.0.3",
-        "@session.js/mnemonic": "^1.0.4",
+        "@session.js/keypair": "^1.0.8",
+        "@session.js/mnemonic": "^1.0.6",
       },
       "devDependencies": {
         "@types/bun": "latest",
@@ -18,9 +18,9 @@
     },
   },
   "packages": {
-    "@noble/curves": ["@noble/curves@1.9.7", "", { "dependencies": { "@noble/hashes": "1.8.0" } }, "sha512-gbKGcRUYIjA3/zCCNaWDciTMFI0dCkvou3TL8Zmy5Nc7sJ47a0jtOeZoTaMxkuqRo9cRhjOdZJXegxYE5FN/xw=="],
+    "@noble/curves": ["@noble/curves@2.0.1", "", { "dependencies": { "@noble/hashes": "2.0.1" } }, "sha512-vs1Az2OOTBiP4q0pwjW5aF0xp9n4MxVrmkFBxc6EKZc6ddYx5gaZiAsZoq0uRRXWbi3AT/sBqn05eRPtn1JCPw=="],
 
-    "@noble/hashes": ["@noble/hashes@1.8.0", "", {}, "sha512-jCs9ldd7NwzpgXDIf6P3+NrHh9/sD6CQdxHyjQI+h/6rDNo88ypBxxz45UDuZHz9r3tNz7N/VInSVoVdtXEI4A=="],
+    "@noble/hashes": ["@noble/hashes@2.0.1", "", {}, "sha512-XlOlEbQcE9fmuXxrVTXCTlG2nlRXa9Rj3rr5Ue/+tX+nmkgbX720YHh0VR3hBF9xDvwnb8D2shVGOwNx+ulArw=="],
 
     "@protobufjs/aspromise": ["@protobufjs/aspromise@1.1.2", "", {}, "sha512-j+gKExEuLmKwvz3OgROXtrJ2UG2x8Ch2YZUxahh+s1F2HZ+wAceUNLkvy6zKCPVRkU++ZWQrdxsUeQXmcg4uoQ=="],
 
@@ -50,9 +50,9 @@
 
     "@session.js/errors": ["@session.js/errors@1.0.10", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-HjgWPg0ih8PaeJCtgt4sfl+WyS4iykgIfRzR+bfTiyDpIFwt05gMdCdb755XZXc6xjhKoR2cqpJJFnhZ3FFddw=="],
 
-    "@session.js/keypair": ["@session.js/keypair@1.0.3", "", { "dependencies": { "@noble/curves": "^1.9.2" }, "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-4b0XjsPkAO5Pks2rEMKgMAqJx0l3xOdTGFEqyyLYNxG6vx86V/Lt/nUsyEByYC13j6UPf0tIGJ02qCPeFxKo5A=="],
+    "@session.js/keypair": ["@session.js/keypair@1.0.8", "", { "dependencies": { "@noble/curves": "^2.0.1" }, "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-QRq/Qd6EHGMCiaAPA06g+QPT8Y9YW8vTggIn7GzodWQci7Wmyirr375+HHrbkKdNusHpizN/zJPQsTLPT5cAbw=="],
 
-    "@session.js/mnemonic": ["@session.js/mnemonic@1.0.4", "", { "dependencies": { "@session.js/errors": "^1.0.9" }, "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-ms6jNp1c4G8KkV/n/wBnPkEijkjjWOLDiLf7cDjhYMinVsL3i7lJ7YfZGS/b71HzIkWEBAlcDACrveD89GYe8A=="],
+    "@session.js/mnemonic": ["@session.js/mnemonic@1.0.6", "", { "dependencies": { "@session.js/errors": "^1.0.11" }, "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-pg/dOttuDAKRWGon4lA7e6rCLkxaW4Z5BrVneusk0WGlUARH3I02rZbrLflw5FhXseQeowLhdK7mKnjM3Ghx1A=="],
 
     "@session.js/types": ["@session.js/types@1.0.11", "", { "dependencies": { "lodash": "^4.17.21", "protobufjs": "^7.3.2" }, "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-5EYZiMaJCZxpmbatWNtHaffSqvAayW6vV3GQmvhEnhJP7BpZ8Ju4/syrzQfpi/haKtIasr+tkWTutX+yUeqJcg=="],
 
@@ -95,6 +95,10 @@
     "zod": ["zod@3.23.8", "", {}, "sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g=="],
 
     "@session.js/client/@session.js/keypair": ["@session.js/keypair@1.0.2", "", { "dependencies": { "libsodium-wrappers-sumo": "^0.7.13" }, "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-Yzty8lVsaoBQDGfekAx53uCs2GSin1ii+Tjam8yhqXfZs7c0it6uvx6z6YrORUJQ/PuYM3ustyecgfNdJ6wjNQ=="],
+
+    "@session.js/client/@session.js/mnemonic": ["@session.js/mnemonic@1.0.4", "", { "dependencies": { "@session.js/errors": "^1.0.9" }, "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-ms6jNp1c4G8KkV/n/wBnPkEijkjjWOLDiLf7cDjhYMinVsL3i7lJ7YfZGS/b71HzIkWEBAlcDACrveD89GYe8A=="],
+
+    "@session.js/mnemonic/@session.js/errors": ["@session.js/errors@1.0.11", "", { "peerDependencies": { "typescript": "^5.0.0" } }, "sha512-r06Bb/g5P8HjXZF8u/36RFeLe974TbczB227pvTeJtA27PshH8M4o3DBpFl728+6THuIAke8SdOmdNGaElCc9A=="],
 
     "protobufjs/long": ["long@5.2.3", "", {}, "sha512-lcHwpNoggQTObv5apGNCTdJrO69eHOZMi4BNC+rTLER8iHAqGrUVeLh/irVIM7zTw2bOXA8T6uNPeujwOLg/2Q=="],
   }
